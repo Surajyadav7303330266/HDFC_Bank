@@ -1,0 +1,43 @@
+<html>
+    <head>
+            <style>
+                    form input{padding-left: 5px;border:1px solid black;font-size:20px;}
+                    form input[type="submit"],form input[type="reset"]{padding:5px 5px;font-size:20px;font-weight:bold;
+                    border:2px solid blue;background-color:skyblue;border-radius:5px;}
+                    </style>
+    </head>
+    <body style="margin-top: 30px;margin-left: 20px;">
+    <form>
+        <input type="text" name="username" placeholder="username" id="username"><br><br>
+        <input type="password" name="password" placeholder="password" id="password"><br><br>
+        <input type="submit" name="submit" value="submit" onclick="getInfo()">
+        <input type="reset" name="reset" value="reset">
+    </form>
+    <script>
+    var objPeople=[
+        {
+            uname:"suraj",
+            password: "123"
+        },
+        {
+            uname:"root",
+            password:"123"
+        }
+    ]
+    function getInfo(){
+        var uname = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        for(i=0;i<objPeople.length;i++){
+            if(uname==objPeople[i].uname && password == objPeople[i].password){
+                window.open("http://localhost/HDFCbank/display.php");
+                //console.log(uname +" is logged in");
+                
+            return;
+            }
+        }
+        alert("incorrect username or password");
+    //console.log("incorrect username or password");
+    }
+    </script>
+    </body>
+</html>

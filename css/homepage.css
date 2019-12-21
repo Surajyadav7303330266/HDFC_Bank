@@ -1,0 +1,40 @@
+body{background-color: #f3f3f3;}
+#loginbtn:hover{background-color: #b72ae2;height: 40px;}
+#menu tr td{text-align: center;color:white;font-size: 30px;width:14%;}
+.col-sm-2 ul{color:white;list-style: none;}
+.col-sm-2 ul li:hover{text-decoration: underline;cursor: pointer;}
+.col-sm-2 ul li i{margin-right: 6px;}
+
+.wrapper{
+	position:fixed;top:50%;transform:translateY(-50%);
+}
+.share{
+	width:60px;
+	height:60px;
+	background-color:red;
+	position:relative;
+	cursor:pointer;
+	transition:all 0.2s linear;
+}
+.share img{
+	position:absolute;
+	top:50%;left:50%;
+	transform:translate(-50%,-50%);
+	color:#fff;
+	height:25px;
+}
+.share img:hover{height:30px}
+.share:nth-child(1){background-color:#3b5998;}
+.share:nth-child(2){background-color:#33bdfd;}
+.share:nth-child(3){background-color:#a734b5;}
+.startPhoto{position: fixed;height:500;width:800px;position: absolute;z-index: 2000;margin-left: 300px;margin-top: 60px;
+    border:5px solid black;}
+.startPhoto .fa{color:white;font-size: 15px;margin-left:-2px}
+
+.wrapper{
+	position:fixed;top:50%;transform:translateY(-50%);
+}
+.eka{cursor: pointer;}
+.whitebox{background-color: white;border: 1px solid grey;padding: 4px;margin: 5px 3px;width: 220px;}
+.whitebox img{height: 75px;width: 210px;}
+.whiteboxs{background-color: white;border: 1px solid grey;padding: 4px;margin: 5px 3px;}
